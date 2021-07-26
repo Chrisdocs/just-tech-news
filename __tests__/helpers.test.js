@@ -10,13 +10,3 @@ test('format_plural() returns a plural if input is multiple', () => {
 
     expect(format_plural('Tiger', 2)).toBe('Tigers')
 })
-
-test('format_url() should return a simplified url string', () => {
-    const url1 = format_url('http://test.com/test/1')
-    const url2 = format_url('http://www.cool.com/abc/')
-    const url3 = format_url('http://www.wows.com?q=what')
-
-    expect(url1).toBe('test.com');
-    expect(url2).toBe('cool.com');
-    expect(url3).toBe('wows.com')
-})
